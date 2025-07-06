@@ -66,4 +66,37 @@
 // 2 3 4 1
 
 // Java Program :
+import java.util.Scanner;
+class InPlaceLeftRotate
+{
+    public static int [] leftShift(int[] a)
+    {
+            int temp = a[0];
+            for (int i=0;i<a.length-1;i++)
+            {
+                a[i] = a[i+1];
+            }
+            a[a.length-1] = temp;
+            return a;
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the array size : ");
+        int size = sc.nextInt();
+        int [] a = new int[size];
+    
+        for(int i = 0;i<a.length;i++)
+        {
+            a[i] = sc.nextInt();
+        }
+
+       int[] b = leftShift(a);
+        System.out.println("Array after left rotation:");
+         for(int i = 0;i<=a.length-1;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+}
 

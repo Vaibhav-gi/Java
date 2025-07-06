@@ -49,3 +49,31 @@
 // world
 
 // Java Program :
+import java.util.Scanner;
+public class StringArrayInput {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the number of strings: ");
+        int n = sc.nextInt();
+        if (n < 0) {
+            System.out.println("Negative value not allowed.");
+            return;
+        }
+        sc.nextLine(); // takes the last element to the leftover newline
+
+        String[] arr = new String[n];
+        
+        System.out.println("Enter " + n + " strings:");
+
+        for (int i = 0; i < n; i++) {
+
+            arr[i] = sc.nextLine();
+        }
+
+        System.out.println("\nYou entered:");
+        for (String str : arr) {
+            System.out.println(str);
+        }
+    }
+}

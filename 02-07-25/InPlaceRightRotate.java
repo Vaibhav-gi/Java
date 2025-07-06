@@ -57,3 +57,40 @@
 // 50 10 20 30 40 
 
 // Java Program :
+import java.util.Scanner;
+class InPlaceRightRotate
+{
+    public static int [] rightShift(int[] a,int n)
+    {
+        for(int x = 1;x<=n;x++)
+        {
+            int temp = a[a.length-1];
+            for(int i = a.length-2;i>=0;i--)
+            {
+                a[i+1] = a[i];
+            }
+            a[0] = temp;
+        }
+        return a;
+    }
+    public static void main(String[] args)
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the size of array : ");
+        int size = sc.nextInt();
+        
+        int []a = new int[size];
+          
+        for(int i = 0;i<=a.length-1;i++)
+        {
+            a[i] = sc.nextInt();
+        }
+        
+        a = rightShift(a, 1);
+        System.out.println("Array after right rotation:");
+        for(int i = 0;i<size;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+}

@@ -52,3 +52,39 @@
 // 5 + 0 = 5
 
 // Java Program :
+import java.util.Scanner;
+public class PairSumFinder{
+
+public static void main(String[] args){
+Scanner s = new Scanner(System.in);
+System.out.print("Enter the array size : ");
+int size = s.nextInt();
+if(size<0){
+    System.out.println("Invalid Array size.");
+    return;
+}
+System.out.println("Enter "+size+" elements : ");
+int[] arr = new int[size];
+
+for(int i=0;i<=size-1;i++){
+   arr[i]=s.nextInt();
+}
+System.out.print("Enter the target sum statement: ");
+int ele = s.nextInt();
+System.out.println("Pairs of elements and their sum:");
+int flag=0;
+for(int j=0;j<size;j++){
+    for(int k=j+1;k<size;k++){
+        if(arr[j]+arr[k]==ele){
+            flag=1;
+            System.out.println(arr[j]+" + "+arr[k]+" = "+ele);
+        }
+    }
+
+
+}
+if(flag==0){
+    System.out.println("No pairs found with the sum "+ele);
+}
+}
+}

@@ -83,3 +83,54 @@
 // Fee to Pay         : ₹24000.0
 
 // Java Program :
+import java.util.Scanner;
+
+class Student {
+    // Attributes
+    String name;
+    String course;
+    double fee;
+    boolean isScholarshipHolder;
+
+    // Constructor
+    public Student(String name, String course, double fee, boolean isScholarshipHolder) {
+        this.name = name;
+        this.course = course;
+        this.fee = fee;
+        this.isScholarshipHolder = isScholarshipHolder;
+    }
+
+    // Method: enroll
+    void enroll() {
+        System.out.println("Student Name       : " + name);
+        System.out.println("Course Enrolled    : " + course);
+        System.out.println("Scholarship Holder : " + (isScholarshipHolder ? "Yes" : "No"));
+        System.out.println("Fee to Pay         : ₹" + fee);
+    }
+}
+
+public class ELC {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input from user
+        System.out.print("Enter Student Name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter Course Name: ");
+        String course = sc.nextLine();
+
+        System.out.print("Enter Course Fee: ");
+        double fee = sc.nextDouble();
+
+        System.out.print("Is Scholarship Holder (true/false): ");
+        boolean isScholarshipHolder = sc.nextBoolean();
+
+        // Create student and enroll
+        Student s = new Student(name, course, fee, isScholarshipHolder);
+        System.out.println("\n--- Enrollment Details ---");
+        s.enroll();
+
+        sc.close();
+    }
+}

@@ -4,18 +4,18 @@
 // Attributes :
 
 // names		Return Type
-// --------		---------------		
-//  firstName   	:String   
-//  lastName      	:String  
-//  employeeId 	:int  
-//  salary  		:double  
-//  NoOfProject 	:int 
+// --------		---------------
+//  firstName   	:String
+//  lastName      	:String
+//  employeeId 	:int
+//  salary  		:double
+//  NoOfProject 	:int
 
-// Access Modifier : private (for all varriables)  
+// Access Modifier : private (for all variables)
 
 // Implement constructors to initialize these properties.
 
-// implement calculateSalary() method that will add extra ammount in salary based on NoOfProject.
+// implement calculateSalary() method that will add extra amount in salary based on NoOfProject.
 
 // Return Type       : void
 // Access modifier :public
@@ -27,7 +27,7 @@
 // Take another class Tester (ELC Class) which is having main method and instantiate the Employee object and execute the methods.
 
 
-// Test Case 1: 
+// Test Case 1:
 // ----------------
 
 // Valid Input with Projects Between 6 and 10

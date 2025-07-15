@@ -69,8 +69,8 @@ System.out.printf("Multiplication of two double is : %.2f",cal.Multiply(n3,n4));
 
 }
 
-}
 
+}
 
 
 class Calculator{

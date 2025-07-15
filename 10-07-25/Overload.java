@@ -55,7 +55,7 @@ public class Overload {
 		int length = s.nextInt();
 		System.out.print("Enter width of the Square : ");
 		int width = s.nextInt();
-		System.out.print("Enter radius of the Square : ");
+		System.out.print("Enter radius of the Circle : ");
 		double radius = s.nextDouble();
 
 		ShapeCalculator cal = new ShapeCalculator();

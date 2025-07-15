@@ -1,0 +1,219 @@
+Q1.   What is the superclass of all Java classes?
+
+ Main
+
+ Object ✔
+
+ Base
+
+ Root
+
+
+Q2.   Which type of inheritance is not supported in Java?
+
+ Single
+
+ Multilevel
+
+ Multiple (with classes) ✔
+
+ Hierarchical
+
+
+Q3.   Can subclass have more than one superclass?
+
+ a) No, a subclass can only have one superclass ✔
+
+ b) Yes, a subclass can have multiple superclasses
+
+ c) Only if the superclasses have the same name
+
+ d) Only if the subclass is marked as "final"
+
+
+Q4.   What is the correct syntax to call a superclass constructor?
+
+ super() ✔
+
+ base()
+
+ parent()
+
+ this()
+
+Q5.   What is constructor chaining?
+
+ Calling one constructor from another in the same or parent class ✔
+
+ Overriding constructors
+
+ Creating multiple objects
+
+ None of the above
+
+Q6.   What happens if you make all fields public?
+
+ Increases encapsulation
+
+ Breaks encapsulation ✔
+
+ No effect
+
+ Makes code more secure
+
+Q7.   What is inheritance in Java?
+
+ Acquiring properties of one class by another ✔
+
+ Hiding data
+
+ Overloading methods
+
+ None of the above
+
+Q8.   Which keyword is used to call a constructor from the parent class?
+
+ super ✔
+
+ this
+
+ parent
+
+ base
+
+
+Q9.   What is method overloading?
+
+ Same method name, different parameters in same class ✔
+
+ Same method name, different classes
+
+ Same method name, same parameters
+
+ None of the above
+
+Q10.   Which keyword is used to inherit a class in Java?
+
+ implements
+
+ extends ✔
+
+ inherits
+
+ super
+
+Q11.   Can you call both this() and super() in the same constructor?
+
+ Yes
+
+ No ✔
+
+ Only in abstract classes
+
+ Only in interfaces
+
+Q12.   What is the output of the following code?
+class Animal { void sound() { System.out.println("Animal"); } }
+class Dog extends Animal { void sound() { System.out.println("Dog"); } }
+Dog a = new Dog();
+a.sound();
+
+ Animal
+
+ Dog ✔
+
+ Error
+
+ Animal Dog
+
+
+Q13.   What is the output of the following code?
+class A { int x = 10; }
+class B extends A { int y = 20; }
+B b = new B();
+System.out.println(b.x + " " + b.y);
+
+ 10 20 ✔
+
+ 20 10
+
+ Error
+
+ 0 0
+
+Q14.   What is the advantage of IS-A relationship?
+
+ a) Code reusability ✔
+
+
+ b) Method overriding
+
+
+ c) Multiple inheritance
+
+
+ d) Dynamic polymorphism
+
+Q15.   Which keyword is used to call another constructor in the same class?
+
+ super
+
+ this ✔
+
+ base
+
+ parent
+
+Q16.   What is single-level inheritance?
+
+ A) A subclass inherits from one superclass ✔
+
+ B) Multiple subclasses inherit from one superclass
+
+ C) A subclass inherits from multiple superclasses
+
+ D) None
+
+Q17.   What happens if you do not explicitly call a superclass constructor in a subclass constructor?
+
+ Compiler error
+
+ Compiler automatically calls the no-argument constructor of superclass ✔
+
+ Nothing
+
+ Calls subclass constructor again
+
+Q18.   Which of the following is true about inheritance?
+
+ Private members of superclass are accessible in subclass
+
+ Protected members are accessible in subclass ✔
+
+ Static members cannot be inherited 
+
+ Constructors are inherited
+
+Q19.   What is the output of the following code?
+class A { A() { System.out.println("A"); } }
+class B extends A { B() { System.out.println("B"); } }
+B b = new B();
+
+ A
+
+ B
+
+ A B ✔
+
+ B A
+
+Q20.   Which keyword is used to prevent inheritance in Java?
+
+ A) static
+
+ B) final ✔
+
+ C) abstract
+
+ D) private
+
